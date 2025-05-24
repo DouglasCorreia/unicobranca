@@ -1,0 +1,101 @@
+.home__section{
+    &:not(.home__section--home){
+        width: 100%;
+        padding: 70px 0px;
+
+        @media screen and (max-width: 1023px){
+            padding: 50px 0px;
+        }
+
+        > .component__container{
+            > .component__row{
+                align-content: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.home__section--home{
+    .home__banners{
+        position: relative;
+
+        .banners__swiper{
+            .swiper-wrapper{
+                .swiper-slide{
+                    position: relative;
+
+                    img{
+                        width: 100%;
+                        max-width: 1920px;
+                        height: auto;
+                    }
+
+                    .banners__text{
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%) translateX(-50%);
+                        left: 50%;
+
+                        span{
+                            display: block;
+                            line-height: 65px;
+                            font-family: $font-family;
+                            font-weight: 700;
+                            font-size: 50px;
+                            color: #ffffff;
+                            max-width: 475px;
+
+                            @media screen and (max-width: 1023px){
+                                line-height: 20px;
+                                font-size: 21px;
+                                max-width: 210px;
+                            }
+
+                            @media screen and (min-width: 1024px) and (max-width: 1199px){
+                                line-height: 40px;
+                                font-size: 34px;
+                                max-width: 330px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .swiper-banners-pagination{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            bottom: 25px;
+            z-index: 1;
+
+            @media screen and (max-width: 1023px){
+                bottom: 10px;
+            }
+
+            .swiper-pagination-bullet{
+                width: 15px;
+                height: 15px;
+                background-color: transparent;
+                border: 2px solid #ffffff;
+                margin: 0px 10px 0px 0px;
+                opacity: 1;
+
+                @media screen and (max-width: 1023px){
+                    width: 10px;
+                    height: 10px;
+                    margin: 0px 6px 0px 0px;
+                }
+
+                &.swiper-pagination-bullet-active{
+                    background-color: #ffffff;
+                }
+            }
+        }
+    }
+}

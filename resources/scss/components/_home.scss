@@ -1,0 +1,269 @@
+.home__section--about{
+    .about__container{
+        .about__row{
+            align-items: center;
+
+            @media screen and (max-width: 1023px){
+                align-items: unset;
+            }
+
+            .about__banner{
+                width: 23%;
+                max-width: 350px;
+                padding: 0px 15px;
+
+                @media screen and (max-width: 1023px){
+                    width: 100%;
+                }
+
+                @media screen and (min-width: 1024px) and (max-width: 1199px){
+                    width: 35%;
+                }
+                
+                img{
+                    width: 100%;
+                    max-width: 315px;
+                    height: auto;
+                }
+            }
+
+            .about__content{
+                width: 77%;
+                max-width: 748px;
+                padding: 0px 15px;
+
+                @media screen and (max-width: 1023px){
+                    width: 100%;
+                    margin-top: 30px;
+                }
+
+                @media screen and (min-width: 1024px) and (max-width: 1199px){
+                    width: 65%;
+                }
+
+                h2{
+                    display: block;
+                    line-height: 1;
+                    font-family: $font-family;
+                    font-weight: 700;
+                    font-size: 38px;
+                    color: $color-black;
+                    margin-bottom: 30px;
+
+                    @media screen and (max-width: 1023px){
+                        font-size: 28px;
+                        line-height: 18px;
+                        margin-bottom: 25px;
+                    }
+
+                    @media screen and (min-width: 768px) and (max-width: 1023px){
+                        text-align: center;
+                    }
+                }
+
+                p{
+                    display: block;
+                    line-height: 23px;
+                    font-family: $font-family;
+                    font-weight: 400;
+                    font-size: 21px;
+                    color: $color-black;
+                    max-width: 600px;
+
+                    @media screen and (max-width: 1023px){
+                        font-size: 14px;
+                    }
+
+                    @media screen and (min-width: 768px) and (max-width: 1023px){
+                        text-align: center;
+                        margin: 0px auto;
+                    }
+                }
+            }
+        }
+    }
+}
+.home__section--solutions{
+    background-color: #f8e0b2;
+
+    .solutions__container{
+        .solutions__row{
+            .solutions__title{
+                width: 100%;
+                max-width: 100%;
+                padding: 0px 15px;
+                margin-bottom: 50px;
+
+                h2{
+                    display: block;
+                    line-height: 1;
+                    font-family: $font-family;
+                    font-weight: 700;
+                    font-size: 38px;
+                    color: $color-black;
+                    text-align: center;
+                    margin-bottom: 25px;
+
+                    @media screen and (max-width: 1023px) {
+                        font-size: 28px;
+                    }
+                }
+
+                p{
+                    display: block;
+                    line-height: 21px;
+                    font-family: $font-family;
+                    font-weight: 400;
+                    font-size: 21px;
+                    color: $color-black;
+                    text-align: center;
+                    max-width: 650px;
+                    margin: 0px auto;
+
+                    @media screen and (max-width: 1023px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .solutions__items{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                max-width: 1090px;
+
+                .items__card{
+                    width: 33.3%;
+                    max-width: 33.3%;
+                    padding: 0px 15px;
+
+                    &:nth-of-type(n + 4){
+                        margin-top: 30px;
+                    }
+
+                    @media screen and (max-width: 767px){
+                        width: 100%;
+                        max-width: 100%;
+                        
+                        &:nth-of-type(n + 2){
+                            margin-top: 30px;
+                        }
+                    }
+
+                    @media screen and (max-width: 768px) and (max-width: 1023px){
+                        width: 50%;
+                        max-width: 50%;
+                        
+                        &:nth-of-type(n + 3){
+                            margin-top: 30px;
+                        }
+                    }
+
+                    .card__inner{
+                        background-color: #ffffff;
+                        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .08);
+                        border-radius: 12px;
+                        padding: 70px 15px 15px 15px;
+
+                        h3{
+                            display: block;
+                            line-height: 1;
+                            font-family: $font-family;
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: $color-black;
+                            margin-bottom: 20px;
+                        }
+
+                        p{
+                            display: block;
+                            line-height: 21px;
+                            font-family: $font-family;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: $color-black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home__section--contact{
+    .contact__container{
+        .contact__row{
+            .contact__wrapper{
+                width: 100%;
+                max-width: 100%;
+                padding: 0px 15px;
+
+                h2{
+                    display: block;
+                    line-height: 1;
+                    font-family: $font-family;
+                    font-weight: 700;
+                    font-size: 38px;
+                    color: $color-black;
+                    text-align: center;
+                    margin-bottom: 25px;
+
+                    @media screen and (max-width: 1023px) {
+                        font-size: 28px;
+                    }
+                }
+
+                span{
+                    display: block;
+                    line-height: 1;
+                    font-family: $font-family;
+                    font-weight: 400;
+                    font-size: 21px;
+                    color: $color-black;
+                    text-align: center;
+
+                    @media screen and (max-width: 1023px) {
+                        font-size: 14px;
+                    }
+                }
+
+                a{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    max-width: 565px;
+                    height: 70px;
+                    font-family: $font-family;
+                    font-weight: 700;
+                    font-size: 28px;
+                    color: #ffffff;
+                    background-color: $color-gold;
+                    border-radius: 50px;
+                    padding: 0px;
+                    text-decoration: none;
+                    margin: 50px auto 0px auto;
+                    @include transitionFast();
+
+                    &:hover{
+                        background-color: $color-gold-light;
+                    }
+
+                    @media screen and (max-width: 1023px) {
+                        padding: 0px;
+                        width: 100%;
+                        max-width: 400px;
+                        font-size: 21px;
+                        height: 50px;
+                        margin-top: 30px;
+
+                        &:hover{
+                            background-color: $color-gold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

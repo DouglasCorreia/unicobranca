@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+
+    li{
+        list-style: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: $font-family;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+
+@media only screen and (min-width: 1650px) {
+    .component__container{
+        padding: 0px 30px !important;
+    }
+}

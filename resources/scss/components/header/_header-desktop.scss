@@ -1,0 +1,196 @@
+header{
+    &.header{
+        background-color: #f1f1f1;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+        @media screen and (max-width: 1023px){
+            padding: 15px 0px;
+        }
+
+         &.header__fixed{
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            -webkit-transition: 450ms ease-in all;
+            -moz-transition: 450ms ease-in all;
+            -o-transition: 450ms ease-in all;
+            transition: 450ms ease-in all;
+            animation: scrollDown ease-in 450ms;
+            z-index: 11;
+        }
+
+        .header__mask{
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            z-index: 11;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+
+        .header__container{
+            .header__row{
+                align-items: center;
+
+                .header__tabs{
+                    display: none;
+
+                    @media screen and (max-width: 1023px){
+                        display: block;
+                        width: 20%;
+                        max-width: 20%;
+                        padding: 0px 15px;
+                    }
+
+                    .tabs__inner{
+                        svg{
+                            fill: $color-gold;
+                            width: 22px;
+                        }
+                    }
+                }
+
+                .header__logo{
+                    width: 12%;
+                    max-width: 12%;
+                    padding: 0px 15px;
+
+                    @media screen and (min-width: 1024px) and (max-width: 1199px){
+                        width: 16%;
+                        max-width: 16%;
+                    }
+
+                    @media screen and (max-width: 1023px){
+                        width: 40%;
+                        max-width: 40%;
+                        margin-left: 10%;
+                    }
+
+                    h1{
+                        display: block;
+                        line-height: 1;
+
+                        img{
+                            width: 100%;
+                            max-width: 150px;
+                            height: auto;
+
+                            @media screen and (max-width: 1023px){
+                                display: block;
+                                margin: 0px auto;
+                            }
+
+                            @media screen and (min-width: 1024px) and (max-width: 1199px){
+                                max-width: 120px;
+                            }
+                        }
+                    }
+                }
+
+                .header__nav{
+                    width: 84%;
+                    max-width: 84%;
+                    padding: 0px 15px;
+
+                    @media screen and (max-width: 1023px){
+                        width: 100%;
+                        max-width: 320px;
+                        height: 100dvh;
+                        padding: 0px;
+                        position: fixed;
+                        left: 100%;
+                        top: 0px;
+                        z-index: 1;
+                        background-color: #f1f1f1;
+                    }
+
+                    @media screen and (min-width: 1024px) and (max-width: 1199px){
+                        width: 82%;
+                        max-width: 82%;
+                    }
+
+                    nav{
+                        @media screen and (max-width: 1023px){
+                            padding: 15px;
+                        }
+
+                        .nav__close{
+                            display: none;
+
+                            @media screen and (max-width: 1023px){
+                                display: block;
+                                width: 100%;
+                                text-align: right;
+
+                                svg{
+                                    width: 22px;
+                                    fill: $color-gold;
+                                }
+                            }
+                        }
+
+                        ul{
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+
+                            li{
+                                line-height: 1;
+                                margin-right: 25px;
+
+                                @media screen and (max-width: 1023px){
+                                    margin: 0px;
+                                    width: 100%;
+                                }
+
+                                &:last-of-type{
+                                    margin-right: 0px;
+                                }
+
+                                &.nav__call{
+                                    a{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        align-items: center;
+                                        justify-content: center;
+                                        background-color: $color-gold;
+                                        padding: 15px 30px;
+                                        border-radius: 31px;
+                                        color: #ffffff;
+                                        font-weight: 600;
+
+                                        @media screen and (max-width: 1023px){
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                }
+
+                                a{
+                                    display: block;
+                                    line-height: 1;
+                                    text-decoration: none;
+                                    font-family: $font-family;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    color: #141414;
+                                    padding: 40px 10px;
+
+                                    @media screen and (max-width: 1023px){
+                                        padding: 10px 0px;
+                                    }
+
+                                    @media screen and (min-width: 1024px) and (max-width: 1199px){
+                                        padding: 27px 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
