@@ -6,3 +6,16 @@
         top: 0px;
     }
 }
+
+.animation__fade-up{
+    transition-timing-function: ease;
+    transition-duration: .4s;
+    opacity: 0;
+    transition-property: opacity, transform;
+    transform: translate3d(0, 100px, 0);
+
+    &.animation__started{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
