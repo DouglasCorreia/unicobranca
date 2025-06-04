@@ -79,6 +79,10 @@ footer{
             margin-top: 60px;
             padding: 30px 15px 0px 15px;
             border-top: 1px solid #d5d5d5;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
 
             span{
               display: block;
@@ -87,7 +91,28 @@ footer{
               font-weight: 400;
               font-size: 14px;
               color: $color-black;
-              text-align: center;
+              text-align: left;
+
+              @media screen and (max-width: 1023px) {
+                width: 100%;
+                text-align: center;               
+              }
+            }
+
+            a{
+              display: block;
+              line-height: 1;
+              font-family: $font-family;
+              font-weight: 400;
+              font-size: 14px;
+              color: $color-black;
+              text-align: right;
+
+              @media screen and (max-width: 1023px) {
+                width: 100%;
+                text-align: center;
+                margin-top: 15px;               
+              }
             }
           }
         }

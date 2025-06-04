@@ -39,16 +39,16 @@
 
                         span{
                             display: block;
-                            line-height: 65px;
+                            line-height: 50px;
                             font-family: $font-family;
                             font-weight: 700;
-                            font-size: 50px;
+                            font-size: 41px;
                             color: #ffffff;
-                            max-width: 475px;
+                            max-width: 575px;
 
                             @media screen and (max-width: 1023px){
-                                line-height: 20px;
-                                font-size: 21px;
+                                line-height: 19px;
+                                font-size: 16px;
                                 max-width: 210px;
                             }
 
