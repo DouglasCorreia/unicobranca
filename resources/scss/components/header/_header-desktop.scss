@@ -1,6 +1,6 @@
 header{
     &.header{
-        background-color: #f1f1f1;
+        background-color: #ffffff;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
         @media screen and (max-width: 1023px){
@@ -160,7 +160,10 @@ header{
                                         padding: 15px 30px;
                                         border-radius: 31px;
                                         color: #ffffff;
-                                        font-weight: 600;
+
+                                        &.active{
+                                            color: #ffffff;
+                                        }
 
                                         @media screen and (max-width: 1023px){
                                             margin-top: 10px;

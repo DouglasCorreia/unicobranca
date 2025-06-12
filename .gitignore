@@ -1,3 +1,4 @@
 node_modules/*
 tailwindcss.exe
 package-lock.json
+.htaccess
