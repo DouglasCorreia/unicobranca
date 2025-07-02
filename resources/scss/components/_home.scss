@@ -374,3 +374,49 @@
         }
     }
 }
+
+.home__section--sheet{
+    .sheet__container{
+        .sheet__row{
+            .sheet__wrapper{
+                width: 100%;
+                max-width: 100%;
+                padding: 0px 15px;
+
+                input{
+                    display: block;
+                    margin: 0px auto;
+                }
+
+                #output{
+                    margin-top: 30px;
+                    
+                    ul{
+                        width: max-content;
+                        margin: 0px auto;
+
+                        li{
+                            &:nth-of-type(n + 2){
+                                margin-top: 15px;
+
+                            }
+
+                            span{
+                                display: block;
+                                line-height: 1;
+                                font-family: $font-family;
+                                font-weight: 400;
+                                font-size: 14px;
+                                color: $color-black;
+                                
+                                &:nth-of-type(n + 2){
+                                    margin-top: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
