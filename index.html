@@ -373,8 +373,14 @@
             </div>
         </footer>
 
-        <!-- JavaScript externo -->
         <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+        <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script>
+            (function(){
+                emailjs.init("SEU_USER_ID"); // Substitua pelo seu User ID
+            })();
+        </script>
+
         <script src="assets/js/app-functions.js"></script>
     </body>
 </html>
