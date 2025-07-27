@@ -25,6 +25,11 @@
                 .swiper-slide{
                     position: relative;
 
+                    a{
+                        display: block;
+                        line-height: 1;
+                    }
+
                     img{
                         width: 100%;
                         max-width: 1920px;

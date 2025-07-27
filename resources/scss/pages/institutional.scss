@@ -1,0 +1,84 @@
+.page__institutional{
+    padding: 30px 0px;
+    
+    .institutional__container{
+        .institutional__row{
+            .institutional__wrapper{
+                width: 100%;
+                max-width: 992px;
+                display: block;
+                margin: 0px auto;
+                padding: 0px 15px;
+
+                h1, h2 {
+                    display: block;
+                    line-height: 1;
+                    font-family: $font-family;
+                    font-weight: 700;
+                    font-size: 28px;
+                    color: $color-black;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+
+                h2, h3, h4{
+                    font-size: 24px;
+                    text-align: center;
+                    margin: 30px 0px;
+                }
+
+                p {
+                    display: block;
+                    line-height: 20px;
+                    font-family: $font-family;
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: $color-black;
+                    text-align: center;
+                    margin-bottom: 15px;
+
+                    a{
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        background-color: #bf8b28;
+                        border-radius: 50px;
+                        color: #ffffff;
+                        width: max-content;
+                        height: 45px;
+                        padding: 0px 20px;
+                        margin: 30px auto;
+                    }
+                }
+
+                ul{
+                    li{
+                        line-height: 1;
+                        margin-bottom: 10px;
+
+                        &:last-of-type{
+                            margin-bottom: 0px;
+                        }
+
+                        a{
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: center;
+                            font-family: $font-family;
+                            font-weight: 400;
+                            font-size: 15px;
+                            color: $color-black;
+
+                            svg{
+                                margin-right: 10px;
+                                width: 19px;
+                                height: 19px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

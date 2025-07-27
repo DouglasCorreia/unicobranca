@@ -1,5 +1,5 @@
 import { handleFooter } from "./components/footer";
-import { HandleHeader } from "./components/header";
+import { handleHeader } from "./components/header";
 import { lazyLoad, lazyLoadCss } from "./libs/sd-lazyload";
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
@@ -184,9 +184,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	lazyLoad();
 	lazyLoadCss();
-	HandleHeader();
+	handleHeader();
 	handleFooter();
 	buildBannersSectionOnSwiper();
 	initAnimations();
-	getAndShowDataSheet();
+	//getAndShowDataSheet();
 }, false);

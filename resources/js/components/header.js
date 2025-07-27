@@ -1,7 +1,7 @@
 import { fadeInEffect, fadeOutEffect } from "../libs/sd-effects";
 import { body, header, isMobile } from "./utils";
 
-export const HandleHeader = ()=>{
+export const handleHeader = ()=>{
     let getOffsetTop = (element) => {
         // Get the bounding rectangle of the element
         var rect = element.getBoundingClientRect();
